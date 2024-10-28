@@ -3,103 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DynamicCompute - Innovate Your World</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #4a56e2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x500');
-            background-size: cover;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            color: #4a56e2;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4a56e2;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <title>DynamicCompute</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>DynamicCompute</h1>
-        <p>Innovate Your World</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="hero">
+            <h1>Empowering the Future of Computing</h1>
+            <p>Harnessing AI to make high-performance computing accessible to everyone, everywhere.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
     </header>
 
-    <div class="hero">
-        <h2>Revolutionary Solutions for Modern Problems</h2>
-        <p>Experience the power of computing with DynamicCompute's state-of-the-art technology.</p>
-        <a href="#services" class="cta-button">Explore Our Services</a>
-    </div>
+    <section id="customer-segments">
+        <h2>Our Customers</h2>
+        <div class="segments-container">
+            <div class="segment">
+                <img src="researchers-image.png" alt="Academic Researchers" class="segment-image">
+                <h3>Academic Researchers</h3>
+                <p>We provide powerful computing resources that enable academic researchers to conduct complex simulations and data analysis, accelerating their research and innovation.</p>
+            </div>
+            <div class="segment">
+                <img src="startups_image.png" alt="Small Tech Startups" class="segment-image">
+                <h3>Small Tech Startups</h3>
+                <p>Our flexible and cost-effective solutions empower small tech startups to access high-performance computing without the burden of heavy upfront investments, allowing them to focus on growth and innovation.</p>
+            </div>
+            <div class="segment">
+                <img src="health-image.png" alt="Healthcare Innovators" class="segment-image">
+                <h3>Healthcare Innovators</h3>
+                <p>We support healthcare innovators by offering scalable computing resources for data-intensive applications, such as genomics and medical imaging, driving advancements in patient care and treatment.</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="about" class="content">
+    <section id="about">
         <h2>About Us</h2>
-        <p>DynamicCompute is dedicated to providing cutting-edge computation solutions tailored to meet the ever-evolving needs of businesses and individuals alike. Our mission is to empower our clients with technology that is both innovative and reliable.</p>
-    </div>
+        <div class="about-card">
+            <p>Founded in 2025, DynamicCompute is dedicated to revolutionizing high-performance computing through innovative AI solutions. Our mission is to make advanced computing accessible to everyone, everywhere, while fostering a sustainable future.</p>
+        </div>
+        <h3>Our Approach</h3>
+        <div class="pillars-container">
+            <div class="pillar">
+                <h4>Equitable Access</h4>
+                <p>We believe in providing equal opportunities for all individuals and organizations to leverage high-performance computing, regardless of their background or resources.</p>
+            </div>
+            <div class="pillar">
+                <h4>Cost Efficiency</h4>
+                <p>Our solutions are designed to be cost-effective, ensuring that cutting-edge technology is affordable and accessible to a wider audience.</p>
+            </div>
+            <div class="pillar">
+                <h4>Economic Growth</h4>
+                <p>By empowering businesses and individuals with advanced computing capabilities, we aim to drive innovation and economic development in various sectors.</p>
+            </div>
+            <div class="pillar">
+                <h4>Environmental Impact</h4>
+                <p>We are committed to minimizing our ecological footprint by promoting sustainable practices in technology deployment and operations.</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="services" class="content">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Cloud Computing</li>
-            <li>Data Analysis</li>
-            <li>Machine Learning Solutions</li>
-            <li>Custom Software Development</li>
-        </ul>
-    </div>
+    <section id="solutions">
+        <h2>Our Solutions</h2>
+        <div class="solutions-container">
+            <div class="solution">
+                <h3>Cloud-Based Platform</h3>
+                <p>Our cloud-based platform connects underserved clients to underutilized high-performance computing (HPC) resources, ensuring equitable access to advanced technology.</p>
+            </div>
+            <div class="solution">
+                <h3>Pay-As-You-Go Pricing</h3>
+                <p>We offer a pay-as-you-go pricing model that reduces costs for users, allowing them to only pay for the resources they use without long-term commitments.</p>
+            </div>
+            <div class="solution">
+                <h3>User-Friendly Interface</h3>
+                <p>Our simple and user-friendly interface provides remote access to powerful computing resources, making it easy for users to leverage HPC capabilities without technical barriers.</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="contact" class="content">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>Have questions? We'd love to hear from you. Reach out to our team and let's build something great together!</p>
-        <p>Email: <a href="mailto:contact@dynamiccompute.com">contact@dynamiccompute.com</a></p>
-    </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2023 DynamicCompute. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>© 2024 DynamicCompute. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
