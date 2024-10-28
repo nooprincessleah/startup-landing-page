@@ -5,33 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DynamicCompute</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to an animation library like Animate.css (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
         <div class="hero">
-            <h1>Empowering the Future of Computing</h1>
-            <p>Harnessing AI to make high-performance computing accessible to everyone, everywhere.</p>
+            <h1 class="animate__animated animate__fadeInDown">Empowering the Future of Computing</h1>
+            <p class="animate__animated animate__fadeInUp">Harnessing AI to make high-performance computing accessible to everyone, everywhere.</p>
             <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </header>
 
-    <section id="customer-segments">
-        <h2>Our Customers</h2>
-        <div class="segments-container">
-            <div class="segment">
-                <img src="researchers-image.png" alt="Academic Researchers" class="segment-image">
-                <h3>Academic Researchers</h3>
-                <p>We provide powerful computing resources that enable academic researchers to conduct complex simulations and data analysis, accelerating their research and innovation.</p>
+    <nav> 
+        <div class="nav-container"> 
+            <div class="nav-logo">dynamic.compute</div> 
+            <ul> 
+                <li><a href="#about">About Us</a></li> 
+                <li><a href="#solutions">Solutions</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul> 
+        </div>
+    </nav>
+
+    <section id="customer-stories">
+        <h2>Customer Success Stories</h2>
+        <div class="stories-container">
+            <div class="story">
+                <img src="Earth_mapper.png" alt="Earth Mapper" class="story-image">
+                <h3>Earth Mapper</h3>
+                <p>"Transforming the way we understand our planet, Earth Mapper uses DynamicCompute's ultra-fast processing power to analyze massive datasets from satellite imagery, making environmental monitoring more precise and accessible than ever."</p>
             </div>
-            <div class="segment">
-                <img src="startups_image.png" alt="Small Tech Startups" class="segment-image">
-                <h3>Small Tech Startups</h3>
-                <p>Our flexible and cost-effective solutions empower small tech startups to access high-performance computing without the burden of heavy upfront investments, allowing them to focus on growth and innovation.</p>
+            <div class="story">
+                <img src="Economic_researcher.png" alt="Economic Researcher" class="story-image">
+                <h3>Economic Researcher</h3>
+                <p>"Harnessing the computational might of DynamicCompute, Economic Researcher powers through complex models, offering deep insights and accelerating innovation in the world of global finance and policy making."</p>
             </div>
-            <div class="segment">
-                <img src="health-image.png" alt="Healthcare Innovators" class="segment-image">
-                <h3>Healthcare Innovators</h3>
-                <p>We support healthcare innovators by offering scalable computing resources for data-intensive applications, such as genomics and medical imaging, driving advancements in patient care and treatment.</p>
+            <div class="story">
+                <img src="Star_searcher.png" alt="Star Searcher" class="story-image">
+                <h3>Star Searcher</h3>
+                <p>"With DynamicCompute's cutting-edge AI tools, Star Searcher brings the mysteries of the universe closer by scanning enormous astronomical data troves to identify and catalog celestial phenomena with unmatched speed and precision."</p>
+            </div>
+            <div class="story">
+                <img src="Creative_artist.png" alt="Creative Artist" class="story-image">
+                <h3>Creative Artist</h3>
+                <p>"Empowering creative minds, our solutions help artists and developers push the boundaries of animation and design with unparalleled speed and precision, opening up new dimensions for artistic expression."</p>
             </div>
         </div>
     </section>
@@ -99,5 +117,18 @@
         </div>
         <p>© 2024 DynamicCompute. All rights reserved.</p>
     </footer>
+
+    <!-- Optional: Include a script for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
